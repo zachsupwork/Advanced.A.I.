@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', Arial, sans-serif;
             line-height: 1.6;
             background-color: #121212;
             color: #fff;
@@ -25,8 +25,9 @@
             color: #fff;
         }
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 10px;
+            font-weight: bold;
         }
         header p {
             font-size: 1.2rem;
@@ -36,6 +37,13 @@
             padding: 40px 20px;
             max-width: 1200px;
             margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #4C51BF;
+            font-size: 2rem;
+            font-weight: bold;
         }
         .services {
             display: grid;
@@ -53,11 +61,18 @@
             border-radius: 8px;
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         }
         .service h3 {
             font-size: 1.5rem;
             margin-bottom: 10px;
             color: #4C51BF;
+            font-weight: bold;
         }
         .service p {
             font-size: 1rem;
@@ -68,39 +83,11 @@
             color: #4C51BF;
             margin-bottom: 10px;
         }
-        .cta {
-            text-align: center;
-            margin-top: 40px;
-        }
-        .cta a {
-            display: inline-block;
-            background: #4C51BF;
-            color: #fff;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            margin-top: 20px;
-        }
-        .cta a:hover {
-            background: #667EEA;
-        }
-        .contact {
-            background: #1A202C;
-            padding: 20px;
-            margin-top: 40px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .contact p {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
         iframe {
             width: 100%;
             height: 600px;
             border: none;
-            margin-top: 20px;
+            margin-top: 40px;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
@@ -119,40 +106,45 @@
         <p>The AI suite for professionals that need function, form, simplicity, and speed.</p>
     </header>
     <section>
-        <h2 style="text-align: center; margin-bottom: 40px; color: #4C51BF;">Our Services</h2>
+        <h2>Our Services</h2>
         <div class="services">
-            <div class="service">
+            <div class="service" onclick="window.open('https://calendly.com/booking-appointments-calendly/booking-appointments-discussion', '_blank')">
+                <i class="fas fa-file-alt"></i>
+                <h3>Smart Document Insights</h3>
+                <p>Leverage AI to analyze and extract actionable insights from your documents.</p>
+            </div>
+            <div class="service" onclick="window.open('https://calendly.com/booking-appointments-calendly/booking-appointments-discussion', '_blank')">
+                <i class="fas fa-image"></i>
+                <h3>AI Image Intelligence</h3>
+                <p>Automated analysis and insights from images, powered by advanced AI.</p>
+            </div>
+            <div class="service" onclick="window.open('https://calendly.com/booking-appointments-calendly/booking-appointments-discussion', '_blank')">
                 <i class="fas fa-comments"></i>
-                <h3>Chats</h3>
-                <p>Engage in seamless side-by-side chatting with AI personas for enhanced communication.</p>
+                <h3>Virtual AI Assistance</h3>
+                <p>Chat or call with AI for personalized assistance anytime, anywhere.</p>
             </div>
-            <div class="service">
-                <i class="fas fa-chart-line"></i>
-                <h3>Beams</h3>
-                <p>Experience real-time visualizations and coding assistance powered by AI.</p>
-            </div>
-            <div class="service">
+            <div class="service" onclick="window.open('https://calendly.com/booking-appointments-calendly/booking-appointments-discussion', '_blank')">
                 <i class="fas fa-phone-alt"></i>
-                <h3>Calls</h3>
-                <p>Enjoy high-quality calls with AI-driven features for a seamless experience.</p>
+                <h3>Intelligent Call Agents</h3>
+                <p>AI-powered agents for outbound calling and inbound support.</p>
             </div>
-            <div class="service">
-                <i class="fas fa-robot"></i>
-                <h3>AI Agents</h3>
-                <p>Handle inbound and outbound calling, texting, emails, and booking appointments with our AI agents.</p>
+            <div class="service" onclick="window.open('https://calendly.com/booking-appointments-calendly/booking-appointments-discussion', '_blank')">
+                <i class="fas fa-sms"></i>
+                <h3>AI SMS Solutions</h3>
+                <p>Efficient messaging solutions managed by AI for seamless communication.</p>
             </div>
-        </div>
-        <div class="cta">
-            <a href="https://calendly.com/booking-appointments-calendly/booking-appointments-discussion" target="_blank">
-                Book a Meeting
-            </a>
+            <div class="service" onclick="window.open('https://calendly.com/booking-appointments-calendly/booking-appointments-discussion', '_blank')">
+                <i class="fas fa-envelope"></i>
+                <h3>Email Automation</h3>
+                <p>AI agents handling emails with precision and speed to save you time.</p>
+            </div>
+            <div class="service" onclick="window.open('https://calendly.com/booking-appointments-calendly/booking-appointments-discussion', '_blank')">
+                <i class="fas fa-calendar-check"></i>
+                <h3>Appointment Scheduling</h3>
+                <p>AI-powered scheduling agents to manage your appointments efficiently.</p>
+            </div>
         </div>
         <iframe src="https://calendly.com/booking-appointments-calendly/booking-appointments-discussion"></iframe>
-    </section>
-    <section class="contact">
-        <h3 style="color: #4C51BF;">Contact Us</h3>
-        <p>Email: <a href="mailto:zachsupwork@gmail.com" style="color: #4C51BF;">zachsupwork@gmail.com</a></p>
-        <p>Phone: <a href="tel:4389326669" style="color: #4C51BF;">438-932-6669</a></p>
     </section>
     <footer>
         <p>© 2025 AdvancedAI. All rights reserved.</p>
